@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
   std::cout << "elapsed: "     << std::endl
 	    << "    "          << elapsed << std::endl
 	    << "throughput: "  << std::endl
-	    << "    "          << elapsed / MAX_ITER << std::endl;
+	    << "    "          << elapsed * 3 / MAX_ITER << std::endl;
 
   return 0;
 }

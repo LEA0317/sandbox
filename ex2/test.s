@@ -3,7 +3,7 @@
 	.section	.rodata.cst8,"aM",@progbits,8
 	.p2align	3
 .LCPI0_0:
-	.quad	4502148214488346440     # double 9.9999999999999995E-8
+	.quad	4509266467149939574     # double 2.9999999999999999E-7
 	.text
 	.globl	main
 	.p2align	4, 0x90
@@ -203,6 +203,9 @@ _GLOBAL__sub_I_test.cpp:                # @_GLOBAL__sub_I_test.cpp
 	.size	_GLOBAL__sub_I_test.cpp, .Lfunc_end1-_GLOBAL__sub_I_test.cpp
 	.cfi_endproc
 
+	.type	_ZStL8__ioinit,@object  # @_ZStL8__ioinit
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
 	.type	.L.str,@object          # @.str
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .L.str:
@@ -219,9 +222,6 @@ _GLOBAL__sub_I_test.cpp:                # @_GLOBAL__sub_I_test.cpp
 	.asciz	"throughput: "
 	.size	.L.str.2, 13
 
-	.type	_ZStL8__ioinit,@object  # @_ZStL8__ioinit
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,1
 	.section	.init_array,"aw",@init_array
 	.p2align	3
 	.quad	_GLOBAL__sub_I_test.cpp
