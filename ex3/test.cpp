@@ -1,6 +1,5 @@
 #include <iostream>
 #include <chrono>
-#include <omp.h>
 
 #define MAX_ITER 10000000
 
