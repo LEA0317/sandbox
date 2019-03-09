@@ -3,7 +3,7 @@
 	.section	.rodata.cst8,"aM",@progbits,8
 	.p2align	3
 .LCPI0_0:
-	.quad	4509266467149939574     # double 2.9999999999999999E-7
+	.quad	4502148214488346440     # double 9.9999999999999995E-8
 	.text
 	.globl	main
 	.p2align	4, 0x90
