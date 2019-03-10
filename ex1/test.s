@@ -3,7 +3,7 @@
 	.section	.rodata.cst8,"aM",@progbits,8
 	.p2align	3
 .LCPI0_0:
-	.quad	4742484428473761792     # double 1.12E+9
+	.quad	4743155517113761792     # double 1.28E+9
 	.text
 	.globl	main
 	.p2align	4, 0x90
@@ -253,6 +253,9 @@ main:                                   # @main
 	vfmadd213pd	%ymm6, %ymm6, %ymm6
 	#NO_APP
 	#APP
+	vfmadd213pd	%ymm7, %ymm7, %ymm7
+	#NO_APP
+	#APP
 	vfmadd213pd	%ymm0, %ymm0, %ymm0
 	#NO_APP
 	#APP
@@ -272,6 +275,9 @@ main:                                   # @main
 	#NO_APP
 	#APP
 	vfmadd213pd	%ymm6, %ymm6, %ymm6
+	#NO_APP
+	#APP
+	vfmadd213pd	%ymm7, %ymm7, %ymm7
 	#NO_APP
 	addl	$1, %eax
 	cmpl	(%rsp), %eax

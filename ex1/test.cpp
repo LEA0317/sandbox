@@ -3,7 +3,7 @@
 #include <omp.h>
 
 #define MAX_ITER 10000000
-#define NUM_FMA  14
+#define NUM_FMA  16
 
 int main(int argc, char** argv) {
   auto start = std::chrono::system_clock::now();
@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
     __asm __volatile("vfmadd213pd %ymm4, %ymm4, %ymm4");
     __asm __volatile("vfmadd213pd %ymm5, %ymm5, %ymm5");
     __asm __volatile("vfmadd213pd %ymm6, %ymm6, %ymm6");
+    __asm __volatile("vfmadd213pd %ymm7, %ymm7, %ymm7");
     __asm __volatile("vfmadd213pd %ymm0, %ymm0, %ymm0");
     __asm __volatile("vfmadd213pd %ymm1, %ymm1, %ymm1");
     __asm __volatile("vfmadd213pd %ymm2, %ymm2, %ymm2");
@@ -24,6 +25,7 @@ int main(int argc, char** argv) {
     __asm __volatile("vfmadd213pd %ymm4, %ymm4, %ymm4");
     __asm __volatile("vfmadd213pd %ymm5, %ymm5, %ymm5");
     __asm __volatile("vfmadd213pd %ymm6, %ymm6, %ymm6");
+    __asm __volatile("vfmadd213pd %ymm7, %ymm7, %ymm7");
   }
 
   auto end = std::chrono::system_clock::now();
